@@ -28,15 +28,12 @@ export const NavbarContainer = styled.div`
   background-color: #fdfdfe;
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled.img`
   color: var(--color-main);
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  width: 200px;
   display: flex;
-  align-items: center;
-  font-weight: bold;
-  text-decoration: none;
 `;
 
 export const MobileIcon = styled.div`

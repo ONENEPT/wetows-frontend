@@ -27,7 +27,7 @@ export const ButtonScroll = styled(LinkS)`
 
 export const Button = styled(Link)`
   border-radius: 5px;
-  background: var(--color-headerGreen);
+  background: var(--color-main);
   width: ${({ notWide }) => (notWide ? '120px' : '')};
   white-space: nowrap;
   padding: 10px 22px;
@@ -60,7 +60,7 @@ export const TransparentButton = styled(Link)`
   color: var(--color-headerGreen);
   font-size: 13px;
   outline: none;
-  border: 2px solid var(--color-headerGreen);
+  border: 2px solid var(--color-main);
   cursor: pointer;
   display: flex;
   justify-content: center;
