@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './utils/global';
 import theme from './utils/theme';
@@ -11,14 +10,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
 ReactDOM.render(
-  <Router>
-    <ThemeProvider theme={theme}>
-      <>
-        <App />
-        <GlobalStyles />
-      </>
-    </ThemeProvider>
-  </Router>,
+  <ThemeProvider theme={theme}>
+    <>
+      <App />
+      <GlobalStyles />
+    </>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 registerServiceWorker();

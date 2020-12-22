@@ -13,10 +13,6 @@ export const CardContainer = styled.div`
     height: 2000px;
     margin-top: 100px;
   }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  }
 `;
 
 export const CardWrapper = styled.div`
@@ -45,11 +41,11 @@ export const Card = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
+  border: 0.5px solid;
   max-height: 340px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
-  width: 500px;
   display: flex;
   justify-content: center;
   &:hover {

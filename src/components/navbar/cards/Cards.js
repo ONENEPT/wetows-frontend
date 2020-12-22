@@ -33,8 +33,8 @@ const Cards = () => {
           <CardH4>
             Reseller
             <CardP>
-              RESELLER Create a branded store to sell products from our catalog.
-              Share your store link on social media to get sales.
+              Create a branded store to sell products from our catalog. Share
+              your store link on social media to get sales.
             </CardP>
             <LinkTo>Join Us Now</LinkTo>
           </CardH4>
