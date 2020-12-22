@@ -14,7 +14,8 @@ export default createGlobalStyle`
      --color-main:${(props) => props.theme.colors.main};
      --color-white:${(props) => props.theme.colors.white};
      --color-headerGreen:${(props) => props.theme.colors.headerGreen};
-     --color-black:${(props) => props.theme.colors.black}
+     --color-black:${(props) => props.theme.colors.black};
+    
  }
 
  body{

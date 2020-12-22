@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
-  color: #fff;
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
   @media screen and (max-width: 768px) {
@@ -13,12 +12,11 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
 display:grid;
 z-index:1;
-height:560px;
+height:600px;
 width:100%;
-max-width:1100px;
 margin-right:auto;
 margin-left:auto;
-
+background:#f9f9f9;
 justify-content:center;
 
 
@@ -53,7 +51,10 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 700px;
+  }
 `;
 
 export const TopLine = styled.p`
@@ -71,9 +72,9 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+  color: var(--color-headerGreen);
 
-  @media screen (and max-width: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
@@ -94,6 +95,10 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 800px;
+  }
 `;
 
 export const Img = styled.img`

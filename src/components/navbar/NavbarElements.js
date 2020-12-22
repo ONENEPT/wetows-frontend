@@ -102,7 +102,7 @@ export const Text = styled.h4`
 `;
 export const NavBtnLink = styled(Link)`
   border-radius: 5px;
-  background: var(--color-headerGreen);
+  background: var(--color-main);
   white-space: nowrap;
   padding: 10px 22px;
   color: #fff;
@@ -117,7 +117,7 @@ export const NavBtnLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    border: 2px solid #6a63fb;
-    color: #6a63fb;
+    border: 2px solid var(--color-main);
+    color: var(--color-main);
   }
 `;

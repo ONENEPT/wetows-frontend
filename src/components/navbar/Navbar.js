@@ -14,10 +14,10 @@ import {
   NavBtnLink,
 } from './NavbarElements';
 
-const Navbar = ({ toggle, loggedIn, name, image }) => {
+const Navbar = ({ toggle, isOpen }) => {
   return (
     <NavS>
-      <NavbarContainer>
+      <NavbarContainer isOpen={isOpen}>
         <NavLogo src={Logo} />
         <MobileIcon onClick={toggle}>
           <FaBars />
@@ -27,15 +27,15 @@ const Navbar = ({ toggle, loggedIn, name, image }) => {
             <NavLinks to="/">Pricing</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="how-it-works">FAQ</NavLinks>
+            <NavLinks to="/how-it-works">FAQ</NavLinks>
           </NavItem>
 
           <NavItem>
-            <NavLinks to="log-In">Log In</NavLinks>
+            <NavLinks to="/log-In">Log In</NavLinks>
           </NavItem>
 
           <NavBtn>
-            <NavBtnLink to="sign-up">Earn Now</NavBtnLink>
+            <NavBtnLink to="/sign-up">Earn Now</NavBtnLink>
           </NavBtn>
         </NavMenu>
       </NavbarContainer>

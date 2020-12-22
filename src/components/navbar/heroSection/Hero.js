@@ -18,24 +18,21 @@ import {
 } from './HeroElements';
 
 const InfoSection = ({
-  lightBg,
   id,
   topLine,
   headline,
-  darkText,
   description,
   img,
   imgStart,
   buttonLabel,
   buttonLabel2,
   alt,
-  primary,
-  dark,
-  dark2,
+  link,
+  link2,
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -44,10 +41,10 @@ const InfoSection = ({
                 <Heading>{headline}</Heading>
                 <Subtitle>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home" style={{ marginRight: '10px' }}>
+                  <Button to={link} style={{ marginRight: '10px' }}>
                     {buttonLabel}
                   </Button>
-                  <TransparentButton to="home">
+                  <TransparentButton to={link2}>
                     {buttonLabel2}
                   </TransparentButton>
                 </BtnWrap>

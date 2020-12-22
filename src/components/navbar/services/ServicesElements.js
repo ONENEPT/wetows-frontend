@@ -1,25 +1,23 @@
 import styled from 'styled-components';
 
 export const ServicesContainer = styled.div`
-  height: 500px;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #fff;
 
-  @media screen and(max-width:768px) {
-    height: 2000px;
-    margin-top: 100px;
+  @media screen and (max-width: 768px) {
+    margin-top: 300px;
   }
 
-  @media screen and (max-width: 480px) {
-    height: 1300px;
+  @media screen and (max-width: 450px) {
+    margin-top: 0px;
   }
 `;
 
 export const ServicesWrapper = styled.div`
-  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
