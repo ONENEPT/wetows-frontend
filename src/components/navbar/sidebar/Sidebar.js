@@ -28,7 +28,7 @@ const Sidebar = ({ toggle, isOpen }) => {
             <SidebarLink to="/log-in">Log in</SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>
-            <SidebarRoute to="/sign-up">Get Started</SidebarRoute>
+            <SidebarRoute to="/sign-up">Earn Now</SidebarRoute>
           </SideBtnWrap>
         </SidebarWrapper>
       </SidebarContainer>

@@ -5,11 +5,12 @@ export const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding-left: 30px;
   background: #fff;
 
   @media screen and (max-width: 768px) {
     margin-top: 300px;
+    align-items: center;
   }
 
   @media screen and (max-width: 450px) {
@@ -73,12 +74,12 @@ export const ServicesH1 = styled.h1`
 export const ServicesH4 = styled.h4`
 font-size:1rem
 margin-bottom:10px;
-text-align: center;
+text-align:center;
 color:var(--color-headerGreen);
 
 `;
 
 export const ServicesP = styled.h1`
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
 `;

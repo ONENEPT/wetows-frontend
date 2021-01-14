@@ -24,7 +24,7 @@ const Login = () => {
       <Input placeholder="Email Address" type="text" />
       <Input placeholder="password" type="password" />
       <PolicyContainer>
-        <Checkbox type="checkbox" />
+        <Checkbox style={{ marginRight: 10 }} type="checkbox" />
         <PolicyText>
           I Accept The <span style={{ color: '#5CE1E6' }}>Terms of Use</span> &{' '}
           <span style={{ color: '#5CE1E6' }}>Privacy Policy</span>
