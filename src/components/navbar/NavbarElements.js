@@ -22,20 +22,50 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 10;
   width: 100%;
-  padding: 0 70px;
-  box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.2);
-  position: fixed;
+  padding: 0 70px 0 30%;
+
   background-color: #fdfdfe;
+  text-align: center;
+`;
+
+export const NavbarContainerTwo = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding-top: 50px;
+  z-index: 10;
+  width: 100%;
+  padding: 0 70px;
+
+  background-color: #fdfdfe;
+  text-align: center;
 `;
 
 export const NavLogo = styled.img`
   color: var(--color-main);
-  justify-self: flex-start;
+  justify-self: center;
   cursor: pointer;
-  width: 200px;
+  width: 150px;
+
   display: flex;
 `;
 
+export const NavStart = styled.div`
+  color: var(--color-main);
+  justify-self: flex-start;
+  display: flex;
+  text-align: center;
+  margin-bottom: 0;
+  align-items: center;
+`;
+
+export const NavIcons = styled.img`
+  color: var(--color-main);
+  justify-self: flex-start;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+`;
 export const MobileIcon = styled.div`
   display: none;
 
@@ -64,8 +94,10 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
   margin: 0 10px;
+  list-style-type: none;
+  color: var(--color-headerGreen);
+  font-weight: 700;
 `;
 
 export const NavLinks = styled(Link)`
@@ -120,4 +152,18 @@ export const NavBtnLink = styled(Link)`
     border: 2px solid var(--color-main);
     color: var(--color-main);
   }
+`;
+
+export const NavTextContainer = styled.div`
+  display: flex;
+  margin-top: 30px;
+`;
+
+export const NavText = styled.p`
+  justify-self: center;
+  height: 20px;\
+  font-weight:500;
+  font-size:21px;
+  line-height:25px;
+  align:center;
 `;

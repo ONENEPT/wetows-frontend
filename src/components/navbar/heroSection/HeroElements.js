@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
-  background: #f9f9f9;
-
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -15,7 +13,6 @@ height:600px;
 width:100%;
 margin-right:auto;
 margin-left:auto;
-background:#f9f9f9;
 justify-content:center;
 
 
@@ -37,13 +34,14 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+  margin-left: 10%;
+
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
-  padding: 0 15px;
+
   grid-area: col2;
 `;
 
@@ -92,8 +90,16 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 800px;
+  }
+`;
+
+export const ImgWrapTwo = styled.div`
+  height: 100%;
+  margin-right: 30px;
 
   @media screen and (max-width: 768px) {
     max-width: 800px;
@@ -104,4 +110,14 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   width: 100%;
   padding-right: 0;
+`;
+
+export const LinkText = styled.p`
+  color: var(--color-main);
+  cursor: pointer;
+
+  &:hover {
+    font-size: 18px;
+    transition: 0.3s;
+  }
 `;

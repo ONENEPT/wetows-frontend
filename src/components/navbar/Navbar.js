@@ -1,42 +1,38 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../images/logo.png';
+import youtube from '../../images/YouTube.png';
+import facebook from '../../images/Facebook.png';
+import instagram from '../../images/Instagram.png';
 
 import {
   NavS,
   NavbarContainer,
-  NavLogo,
-  MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
-  NavBtn,
-  NavBtnLink,
+  NavIcons,
+  NavTextContainer,
+  NavText,
 } from './NavbarElements';
 
 const Navbar = ({ toggle, isOpen }) => {
   return (
     <NavS>
       <NavbarContainer isOpen={isOpen}>
-        <NavLogo src={Logo} />
-        <MobileIcon onClick={toggle}>
-          <FaBars />
-        </MobileIcon>
+        <NavTextContainer>
+          <NavText> Welcome to WeTOWS - Reseller Capital of Africa</NavText>
+        </NavTextContainer>
         <NavMenu>
           <NavItem>
-            <NavLinks to="/">Pricing</NavLinks>
+            <NavIcons src={youtube} />
           </NavItem>
           <NavItem>
-            <NavLinks to="/how-it-works">FAQ</NavLinks>
+            <NavIcons src={facebook} />
           </NavItem>
 
           <NavItem>
-            <NavLinks to="/log-In">Log In</NavLinks>
+            <NavIcons src={instagram} />
           </NavItem>
-
-          <NavBtn>
-            <NavBtnLink to="/sign-up">Earn Now</NavBtnLink>
-          </NavBtn>
         </NavMenu>
       </NavbarContainer>
     </NavS>

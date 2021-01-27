@@ -28,7 +28,7 @@ export const homeObjTwo = {
   topLine: 'Start your store online for free',
   headline: 'The first made-for-Africa reseller platform... with a twist',
   description:
-    'Resellers pick products from our catalog, add their markup, list them in their branded stores and sell by posting links everywhere.',
+    'Partners pick products from our catalog, add their markup, list them in their branded stores and sell by posting links everywhere.',
   buttonLabel: 'Check our products',
   buttonLabel2: 'Learn More',
   imgStart: true,
