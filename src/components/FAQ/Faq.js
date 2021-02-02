@@ -159,8 +159,7 @@ const Faq = () => {
               <Card.Body>
                 <p>
                   WETOWS is free for 90 days. Reseller stores cost N2156 per
-                  month after trial period. WETOWS also charges a 7% transaction
-                  fee on final selling price
+                  month after trial period.
                 </p>
               </Card.Body>
             </Accordion.Collapse>

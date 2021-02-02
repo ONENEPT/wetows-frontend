@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+
 import { Button } from '../../../ButtonElement';
 import { TransparentButton } from '../../../ButtonElement';
+import SignUp from '../../signUp/SignUp';
 
 import {
   InfoContainer,
@@ -30,6 +33,7 @@ const InfoSection = ({
   link,
   link2,
 }) => {
+  const [registerShow, setRegisterShow] = useState(false);
   return (
     <>
       <InfoContainer id={id}>
@@ -41,7 +45,10 @@ const InfoSection = ({
                 <Heading>{headline}</Heading>
                 <Subtitle>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to={link} style={{ marginRight: '10px' }}>
+                  <Button
+                    onClick={() => setRegisterShow(true)}
+                    style={{ marginRight: '10px' }}
+                  >
                     {buttonLabel}
                   </Button>
                   <TransparentButton to={link2}>
@@ -58,6 +65,16 @@ const InfoSection = ({
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
+      <Modal
+        dialogClassName="my-modal"
+        size="lg"
+        show={registerShow}
+        onHide={() => setRegisterShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton></Modal.Header>
+        <SignUp />
+      </Modal>
     </>
   );
 };
