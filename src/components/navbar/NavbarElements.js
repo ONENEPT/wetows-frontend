@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Modal from 'react-bootstrap/Modal';
 
 export const NavS = styled.nav`
   background-color: #fdfdfe;
@@ -161,9 +162,13 @@ export const NavTextContainer = styled.div`
 
 export const NavText = styled.p`
   justify-self: center;
-  height: 20px;\
-  font-weight:500;
-  font-size:21px;
-  line-height:25px;
-  align:center;
+  height: 20px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  align: center;
+`;
+
+export const StyledModal = styled(Modal)`
+  width: 100% !important;
 `;

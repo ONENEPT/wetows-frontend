@@ -87,7 +87,7 @@ const Faq = () => {
                 eventKey="2"
                 style={{ color: '#256559' }}
               >
-                How do I make money on WETOWS?
+                Who is a supplier?
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="2">

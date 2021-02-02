@@ -1,0 +1,30 @@
+.my-modal {
+  max-width: none !important;
+  max-height: 100% !important;
+}
+
+.modal-content {
+  background-color: #453f3f !important;
+  border: none !important;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-header .close {
+  margin: -1rem -1rem -1rem 60rem !important;
+}
+
+.close {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.modal-backdrop.show {
+  opacity: 1 !important;
+}
+
+.modal-backdrop {
+  background-color: #453f3f !important;
+}

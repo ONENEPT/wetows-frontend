@@ -4,7 +4,6 @@ import icon2 from '../../../images/icon2.png';
 import icon3 from '../../../images/icon3.png';
 import {
   ServicesContainer,
-  ServicesH1,
   ServicesH4,
   ServicesWrapper,
   ServicesCard,
